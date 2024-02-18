@@ -3,7 +3,7 @@ import css from './Gallery.module.css';
 import PropTypes from 'prop-types';
 
 const ImageGalleryItem = ({ image, onClick }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [setIsClicked] = useState(false);
   const handleClick = () => {
     setIsClicked(true);
     onClick(image.largeImageURL);
