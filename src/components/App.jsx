@@ -29,6 +29,7 @@ const App = () => {
     if (query) {
       fetchData();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query, page]);
 
   const fetchData = async () => {
