@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import { Rings } from 'react-loader-spinner';
 
 const Loader = () => {

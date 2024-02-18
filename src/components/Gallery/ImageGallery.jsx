@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import ImageGalleryItem from './ImageGalleryItem.jsx';
 import PropTypes from 'prop-types';
 import css from './Gallery.module.css';
