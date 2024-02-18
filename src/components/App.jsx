@@ -25,12 +25,6 @@ const App = () => {
     setPage(1);
   };
 
-  useEffect(() => {
-    if (query) {
-      fetchData(query, page);
-    }
-  }, [query, page]);
-
   const fetchData = async () => {
     setIsLoading(true);
 
@@ -45,6 +39,12 @@ const App = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (query) {
+      fetchData(query, page);
+    }
+  }, [query, page]);
 
   const loadMoreBtn = () => {
     setPage(prev => prev + 1);
