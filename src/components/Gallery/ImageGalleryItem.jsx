@@ -8,6 +8,7 @@ const ImageGalleryItem = ({ image, onClick }) => {
     setIsClicked(true);
     onClick(image.largeImageURL);
   };
+  console.log(isClicked);
   return (
     <li className={css.galleryItem} onClick={handleClick}>
       <img src={image.webformatURL} alt="" />
